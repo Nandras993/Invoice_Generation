@@ -56,9 +56,9 @@ for filepath in filepaths:
     pdf.cell(w=30, h=10, txt=f"The total price is {total_sum}", ln=1)
 
     #Add company name and logo
-    pdf.set_font(family="Times", size=14, style="")
-    pdf.cell(w=25, h=10, txt="PythonHow")
-    pdf.image("pythonhow.png", w=10)
+    pdf.set_font(family="Times", size=14, style="B")
+    pdf.cell(w=25, h=10, txt="Best Company")
+    pdf.image("best_company.png", w=15, h=15, x=43, y=66)
 
 
     pdf.output(f"PDFs/{filename}.pdf")
